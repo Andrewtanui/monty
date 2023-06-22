@@ -85,12 +85,11 @@ void fill_numbase_buff(unsigned int num, unsigned int base,
 	while (i >= 0)
 	{
 	rem = num % base;
-	if (rem > 9) /* return lowercase ASCII val representation */
-		buff[i] = rem + 87; /* 10 will be 'a', 11 = 'b', ... */
+	if (rem > 9)
+		buff[i] = rem + 87;
 	else
 		buff[i] = rem + '0';
-		num /= base;
-		i--;
+	num /= base;
+	i--;
 	}
 }
-
