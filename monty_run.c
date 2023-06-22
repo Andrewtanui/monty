@@ -1,5 +1,7 @@
+#define _GNU_SOURCE
 #include "monty.h"
-
+#include <stdio.h>
+#include <string.h>
 
 /**
  * free_tokens - Frees the global op_toks array of strings.
